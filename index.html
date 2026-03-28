@@ -9,13 +9,14 @@ nav{display:flex;justify-content:center;gap:20px;padding:10px;background:#000;bo
 nav a{color:#00aaff;text-decoration:none;font-weight:bold}
 nav a:hover{color:#fff}
 .hero{padding:100px 20px;text-align:center;background:linear-gradient(#000,#0a1f44)}
-.hero h2{font-size:42px}
 .section{padding:60px 20px;text-align:center}
-.services{display:flex;flex-wrap:wrap;justify-content:center;gap:25px}
-.card{background:#0a1f44;padding:25px;border-radius:12px;width:260px;box-shadow:0 0 15px rgba(0,170,255,0.3)}
-.card h3{color:#00aaff}
+.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:25px}
+.card{background:#0a1f44;border-radius:12px;width:260px;box-shadow:0 0 15px rgba(0,170,255,0.3);overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-content{padding:15px}
+.card h3{color:#00aaff;margin:5px 0}
+.price{font-size:18px;font-weight:bold;margin-top:5px}
 button,.whatsapp-btn{background:#00aaff;border:none;padding:12px 22px;color:#fff;font-weight:bold;cursor:pointer;border-radius:6px;text-decoration:none;display:inline-block}
-button:hover{background:#0088cc}
 .whatsapp-btn{background:#25D366}
 .form-box{background:#0a1f44;padding:30px;border-radius:10px;display:inline-block}
 input,select{padding:10px;margin:8px;border-radius:6px;border:none;width:200px}
@@ -34,12 +35,44 @@ footer{padding:20px;text-align:center;border-top:1px solid #0a1f44}
 <p>Especialistas em degradê, barba e estilo moderno</p>
 <a class="whatsapp-btn" href="https://wa.me/556198821189" target="_blank">Chamar no WhatsApp</a>
 </section><div class="barber-line"></div><section id="servicos" class="section">
-<h2>✂️ Nossos Serviços</h2>
-<div class="services">
-<div class="card"><h3>Corte De Cabelo</h3><p>Navalhado e na régua</p></div>
-<div class="card"><h3>Barba Completa</h3><p>cuidado + acabamento</p></div>
-<div class="card"><h3>Combo</h3><p>Corte + Barba com desconto</p></div>
+<h2>✂️ Serviços e Preços</h2>
+<div class="grid"><div class="card">
+<img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70" alt="Corte">
+<div class="card-content">
+<h3>Corte</h3>
+<p class="price">R$ 25,00</p>
 </div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a" alt="Barba">
+<div class="card-content">
+<h3>Barba</h3>
+<p class="price">R$ 20,00</p>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486" alt="Combo">
+<div class="card-content">
+<h3>Combo Cabelo + Barba</h3>
+<p class="price">R$ 40,00</p>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" alt="Sobrancelha">
+<div class="card-content">
+<h3>Sobrancelha</h3>
+<p class="price">R$ 10,00</p>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1622288432450-277d0fef5ed6" alt="Pigmentação">
+<div class="card-content">
+<h3>Corte + Pigmentação</h3>
+<p class="price">R$ 35,00</p>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1588776814546-ec7e6e0f38a7" alt="Barba Pigmentada">
+<div class="card-content">
+<h3>Barba + Pigmentação</h3>
+<p class="price">R$ 25,00</p>
+</div>
+</div></div>
 </section><div class="barber-line"></div><section id="agendamento" class="section">
 <h2>📅 Agendar Horário</h2>
 <div class="form-box">
@@ -51,6 +84,9 @@ footer{padding:20px;text-align:center;border-top:1px solid #0a1f44}
 <option>Corte</option>
 <option>Barba</option>
 <option>Combo</option>
+<option>Sobrancelha</option>
+<option>Corte + Pigmentação</option>
+<option>Barba + Pigmentação</option>
 </select><br>
 <button type="submit">Agendar pelo WhatsApp</button>
 </form>
@@ -64,16 +100,13 @@ footer{padding:20px;text-align:center;border-top:1px solid #0a1f44}
 </footer><script>
 document.getElementById('formAgendamento').addEventListener('submit', function(e){
  e.preventDefault();
-
  let nome = document.getElementById('nome').value;
  let data = document.getElementById('data').value;
  let hora = document.getElementById('hora').value;
  let servico = document.getElementById('servico').value;
-
  let mensagem = `Olá, meu nome é ${nome}. Quero agendar um ${servico} no dia ${data} às ${hora}.`;
  let link = `https://wa.me/556198821189?text=${encodeURIComponent(mensagem)}`;
-
  window.open(link, '_blank');
 });
 </script></body>
-</html>
+ </html>
