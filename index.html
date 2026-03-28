@@ -46,6 +46,11 @@ background: #111;
 border-radius: 10px;
 overflow: hidden;
 box-shadow: 0 0 10px #00aaff33;
+transition: transform 0.3s;
+}
+
+.card:hover {
+transform: scale(1.05);
 }
 
 .card img {
@@ -113,7 +118,7 @@ text-decoration: none;
 </div>
 
 <div class="card">
-<img src="corte1.jpg">
+<img src="corte2.jpg">
 <div class="card-content">
 <h3>Combo Cabelo + Barba</h3>
 <p class="price">R$ 40,00</p>
@@ -121,7 +126,7 @@ text-decoration: none;
 </div>
 
 <div class="card">
-<img src="corte2.jpg">
+<img src="barba.jpg">
 <div class="card-content">
 <h3>Sobrancelha</h3>
 <p class="price">R$ 10,00</p>
@@ -153,7 +158,7 @@ text-decoration: none;
 <select id="servico">
 <option value="Corte">Corte</option>
 <option value="Barba">Barba</option>
-<option value="Combo">Combo</option>
+<option value="Combo Cabelo + Barba">Combo</option>
 </select>
 
 <br><br>
@@ -191,4 +196,4 @@ window.open(url, "_blank");
 </script>
 
 </body>
-  </html>
+           </html>
