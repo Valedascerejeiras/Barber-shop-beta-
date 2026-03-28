@@ -1,112 +1,200 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rafael Barber Shop</title><style>
-body{margin:0;font-family:Arial;background:#000;color:#fff}
-header{background:#0a1f44;padding:20px;text-align:center;border-bottom:4px solid #00aaff}
-nav{display:flex;justify-content:center;gap:20px;padding:10px;background:#000;border-bottom:1px solid #0a1f44}
-nav a{color:#00aaff;text-decoration:none;font-weight:bold}
-nav a:hover{color:#fff}
-.hero{padding:100px 20px;text-align:center;background:linear-gradient(#000,#0a1f44)}
-.section{padding:60px 20px;text-align:center}
-.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:25px}
-.card{background:#0a1f44;border-radius:12px;width:260px;box-shadow:0 0 15px rgba(0,170,255,0.3);overflow:hidden}
-.card img{width:100%;height:180px;object-fit:cover}
-.card-content{padding:15px}
-.card h3{color:#00aaff;margin:5px 0}
-.price{font-size:18px;font-weight:bold;margin-top:5px}
-button,.whatsapp-btn{background:#00aaff;border:none;padding:12px 22px;color:#fff;font-weight:bold;cursor:pointer;border-radius:6px;text-decoration:none;display:inline-block}
-.whatsapp-btn{background:#25D366}
-.form-box{background:#0a1f44;padding:30px;border-radius:10px;display:inline-block}
-input,select{padding:10px;margin:8px;border-radius:6px;border:none;width:200px}
-footer{padding:20px;text-align:center;border-top:1px solid #0a1f44}
-.barber-line{height:6px;background:repeating-linear-gradient(45deg,#00aaff,#00aaff 10px,#fff 10px,#fff 20px)}
-</style></head><body><header>
-<h1>💈 Rafael Barber Shop</h1>
-<p>Estilo, precisão e atitude</p>
-</header><div class="barber-line"></div><nav>
-<a href="#">Início</a>
-<a href="#servicos">Serviços</a>
-<a href="#agendamento">Agendamento</a>
-<a href="#contato">Contato</a>
-</nav><section class="hero">
-<h2>Seu corte, sua identidade</h2>
-<p>Especialistas em degradê, barba e estilo moderno</p>
-<a class="whatsapp-btn" href="https://wa.me/556198821189" target="_blank">Chamar no WhatsApp</a>
-</section><div class="barber-line"></div><section id="servicos" class="section">
+<title>Rafael Barber Shop</title>
+
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #0a0a0a;
+color: white;
+}
+
+header {
+background: linear-gradient(to right, black, #001f3f);
+text-align: center;
+padding: 40px 20px;
+}
+
+header h1 {
+font-size: 28px;
+}
+
+header p {
+opacity: 0.8;
+}
+
+.btn {
+display: inline-block;
+background: #25D366;
+color: white;
+padding: 12px 20px;
+border-radius: 8px;
+margin-top: 15px;
+text-decoration: none;
+font-weight: bold;
+}
+
+section {
+padding: 30px 15px;
+text-align: center;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+gap: 15px;
+}
+
+.card {
+background: #111;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 0 10px #00aaff33;
+}
+
+.card img {
+width: 100%;
+height: 140px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 10px;
+}
+
+.price {
+color: #00aaff;
+font-weight: bold;
+}
+
+footer {
+background: black;
+padding: 20px;
+font-size: 14px;
+}
+
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25D366;
+color: white;
+padding: 15px;
+border-radius: 50%;
+font-size: 20px;
+text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Rafael Barber Shop</h1>
+<p>Seu corte, sua identidade</p>
+<a class="btn" href="https://wa.me/556198821189?text=Quero%20agendar%20um%20horário">Chamar no WhatsApp</a>
+</header>
+
+<section>
 <h2>✂️ Serviços e Preços</h2>
-<div class="grid"><div class="card">
-<img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70" alt="Corte">
+
+<div class="cards">
+
+<div class="card">
+<img src="imagens/degrade.jpg">
 <div class="card-content">
 <h3>Corte</h3>
 <p class="price">R$ 25,00</p>
 </div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a" alt="Barba">
+</div>
+
+<div class="card">
+<img src="imagens/barba.jpg">
 <div class="card-content">
 <h3>Barba</h3>
 <p class="price">R$ 20,00</p>
 </div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486" alt="Combo">
+</div>
+
+<div class="card">
+<img src="imagens/corte1.jpg">
 <div class="card-content">
 <h3>Combo Cabelo + Barba</h3>
 <p class="price">R$ 40,00</p>
 </div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" alt="Sobrancelha">
+</div>
+
+<div class="card">
+<img src="imagens/corte2.jpg">
 <div class="card-content">
 <h3>Sobrancelha</h3>
 <p class="price">R$ 10,00</p>
 </div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1622288432450-277d0fef5ed6" alt="Pigmentação">
+</div>
+
+<div class="card">
+<img src="imagens/cacheado.jpg">
 <div class="card-content">
 <h3>Corte + Pigmentação</h3>
 <p class="price">R$ 35,00</p>
 </div>
-</div><div class="card">
-<img src="https://images.unsplash.com/photo-1588776814546-ec7e6e0f38a7" alt="Barba Pigmentada">
+</div>
+
+<div class="card">
+<img src="imagens/barba.jpg">
 <div class="card-content">
 <h3>Barba + Pigmentação</h3>
 <p class="price">R$ 25,00</p>
 </div>
-</div></div>
-</section><div class="barber-line"></div><section id="agendamento" class="section">
-<h2>📅 Agendar Horário</h2>
-<div class="form-box">
-<form id="formAgendamento">
-<input type="text" id="nome" placeholder="Seu nome" required><br>
-<input type="date" id="data" required><br>
-<input type="time" id="hora" required><br>
-<select id="servico">
-<option>Corte</option>
-<option>Barba</option>
-<option>Combo</option>
-<option>Sobrancelha</option>
-<option>Corte + Pigmentação</option>
-<option>Barba + Pigmentação</option>
-</select><br>
-<button type="submit">Agendar pelo WhatsApp</button>
-</form>
 </div>
-</section><div class="barber-line"></div><section id="contato" class="section">
-<h2>📍 Contato</h2>
-<p>WhatsApp: +55 61 9882-1189</p>
-<p>Rua Santilino Moltalto, Januária MG</p>
-</section><footer>
-<p>© 2026 Rafael Barber Shop</p>
-</footer><script>
-document.getElementById('formAgendamento').addEventListener('submit', function(e){
- e.preventDefault();
- let nome = document.getElementById('nome').value;
- let data = document.getElementById('data').value;
- let hora = document.getElementById('hora').value;
- let servico = document.getElementById('servico').value;
- let mensagem = `Olá, meu nome é ${nome}. Quero agendar um ${servico} no dia ${data} às ${hora}.`;
- let link = `https://wa.me/556198821189?text=${encodeURIComponent(mensagem)}`;
- window.open(link, '_blank');
-});
-</script></body>
+
+</div>
+</section>
+
+<section>
+<h2>📅 Agendamento</h2>
+<p>Escolha um serviço e fale direto no WhatsApp</p>
+
+<select id="servico">
+<option value="Corte">Corte</option>
+<option value="Barba">Barba</option>
+<option value="Combo">Combo</option>
+</select>
+
+<br><br>
+
+<input type="date" id="data">
+<input type="time" id="hora">
+
+<br><br>
+
+<button onclick="agendar()" class="btn">Agendar Agora</button>
+</section>
+
+<footer>
+<p>📍 Rua Santilino Moltalto, Januária MG</p>
+<p>📞 +55 61 98821-1189</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/556198821189">💬</a>
+
+<script>
+function agendar() {
+let servico = document.getElementById("servico").value;
+let data = document.getElementById("data").value;
+let hora = document.getElementById("hora").value;
+
+let mensagem = `Olá! Quero agendar:\nServiço: ${servico}\nData: ${data}\nHora: ${hora}`;
+
+let url = "https://wa.me/556198821189?text=" + encodeURIComponent(mensagem);
+
+window.open(url, "_blank");
+}
+</script>
+
+</body>
  </html>
